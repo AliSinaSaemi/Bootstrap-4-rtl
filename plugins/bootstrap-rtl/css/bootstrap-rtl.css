@@ -1,0 +1,118 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  .navbar-toggleable-md {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .navbar-toggleable-md .navbar-collapse {
+    flex-direction: row-reverse;
+  }
+  .navbar-toggleable-md .navbar-nav {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+.navbar-brand {
+  margin-left: 1rem;
+  margin-right: 0;
+  text-align: right;
+}
+
+.dropdown-toggle::before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 0.3em;
+  vertical-align: middle;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: inherit;
+  text-align: right;
+}
+
+.row {
+  flex-direction: row-reverse;
+}
+
+.form-inline {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.form-control {
+  text-align: right;
+}
+
+.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-right: 0;
+}
+
+.input-group .form-control {
+  float: right;
+}
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.input-group-addon:first-child {
+  border-left: 0px;
+  border-right: 1px solid;
+}
+
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.input-group-addon:last-child {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right: 0px;
+}
+
+.jumbotron {
+  text-align: right;
+}
