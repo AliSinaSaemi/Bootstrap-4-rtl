@@ -55,9 +55,19 @@ h6 {
   flex-direction: row-reverse;
 }
 
-.form-inline {
+nav.form-inline {
   flex-direction: row-reverse;
+}
+
+form.form-inline {
   text-align: right;
+}
+
+@media (max-width: 992px) {
+  form.form-inline {
+    text-align: right;
+    flex-direction: row-reverse;
+  } 
 }
 
 .form-control {
